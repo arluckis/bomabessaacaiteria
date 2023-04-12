@@ -76,14 +76,11 @@ body{
 
 #fundo{
     opacity: 0.3;
-    position: fixed;
-    width: 2500px;
-    height: 2000px;
-    transform: translate(-300px,-500px);
+    position: absolute;
+    scale: 600%;
 }
 
 .fazerPedido{
-
     height: 70%;
     width: 75%;
     border-radius: 20px;
