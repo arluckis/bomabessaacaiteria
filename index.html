@@ -25,9 +25,9 @@
     <div class="menu">
         <div class="bottomMenu" id="bottom1" > <div class="textOpcao"><strong>Faça seu pedido</strong></div></div>
         <div class="bottomMenu" id="bottom2"> <div class="textOpcao"><strong>Taxas de Entrega</strong></div></div>
-        <div><img src="logo.jpg" class="logo"></div>
         <div class="bottomMenu" id="bottom3"> <div class="textOpcao"><strong>Contatos</strong></div></div>
         <div class="bottomMenu" id="bottom4"> <div class="textOpcao"><strong>Sobre nós</strong></div></div>
+        <div><img src="logo.jpg" class="logo"></div>
     </div>
 
 
@@ -45,8 +45,8 @@
         
         var clicou = 0;
         function entrar(){
-            bottom1.style.height = '70px'
-            bottom1.style.borderRadius = '31px'
+            bottom1.style.height = '75px'
+            bottom1.style.borderRadius = '21px'
             bottom1.style.boxShadow = '2px 2px 2px #00000075'
             bottom1.style.background = '#db9bfd'
             
@@ -61,6 +61,17 @@
             bottom1.style.background = '#edd1fcb6'
             bottom1.style.borderRadius = '100%'
             } 
+           /*  width: 70px;
+    height: 70px;
+    padding: 0.5%;
+    background-color: #edd1fcb6;
+    bottom: 10%;
+    position: absolute;
+    border-radius: 100%;
+    cursor: pointer;
+    left: auto;
+    right: auto;
+    box-shadow: 1px 1px 1px #00000075;;*/
         }
 
         function clicar(){
@@ -69,7 +80,7 @@
                 fazerPedido.style.display = 'block'
                 nomePagina.innerHTML = ('Faça seu pedido')
                 fundo.style.filter = ('blur(30px)')
-                bottom1.style.borderRadius = '31px'
+                bottom1.style.borderRadius = '25px'
             } else {
                 sairPagina()
             }
