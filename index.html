@@ -38,6 +38,7 @@
         var nomePagina = window.document.querySelector('.nomePagina')
         var fazerPedido = window.document.querySelector('.fazerPedido')
         var fundo = window.document.querySelector('#fundo')
+        var logo = window.document.querySelector('.logo')
         bottom1.addEventListener('mouseenter', entrar)
         bottom1.addEventListener('mouseout', sair)
         bottom1.addEventListener('click', clicar)
@@ -45,35 +46,25 @@
         
         var clicou = 0;
         function entrar(){
-            bottom1.style.height = '75px'
-            bottom1.style.borderRadius = '21px'
+            bottom1.style.height = '75%'
+            bottom1.style.minHeight = '34px'
             bottom1.style.boxShadow = '2px 2px 2px #00000075'
             bottom1.style.background = '#db9bfd'
             
         }
         function sair(){
             
-            bottom1.style.height = '70px'
-            bottom1.style.width = '70px'
+            bottom1.style.height = '70%'
+            bottom1.style.width = '20%'
+            bottom1.style.minWidth = '30px'
+            bottom1.style.minHeight = '30px'
             bottom1.style.bottom = '10%'
             bottom1.style.boxShadow = '1px 1px 1px #00000075'
             if (clicou == 0){
             bottom1.style.background = '#edd1fcb6'
-            bottom1.style.borderRadius = '100%'
+            bottom1.style.borderRadius = '100px'
             } 
-           /*  width: 70px;
-    height: 70px;
-    padding: 0.5%;
-    background-color: #edd1fcb6;
-    bottom: 10%;
-    position: absolute;
-    border-radius: 100%;
-    cursor: pointer;
-    left: auto;
-    right: auto;
-    box-shadow: 1px 1px 1px #00000075;;*/
         }
-
         function clicar(){
             if(clicou==0){
                 clicou = 1;
