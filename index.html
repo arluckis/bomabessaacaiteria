@@ -45,21 +45,21 @@
         
         var clicou = 0;
         function entrar(){
-            bottom1.style.height = '60%'
-            bottom1.style.borderRadius = '20px'
+            bottom1.style.height = '70px'
+            bottom1.style.borderRadius = '31px'
             bottom1.style.boxShadow = '2px 2px 2px #00000075'
             bottom1.style.background = '#db9bfd'
             
         }
         function sair(){
             
-            bottom1.style.height = '50%'
-            bottom1.style.width = '19%'
-            bottom1.style.borderRadius = '40px'
-            bottom1.style.bottom = '20%'
+            bottom1.style.height = '70px'
+            bottom1.style.width = '70px'
+            bottom1.style.bottom = '10%'
             bottom1.style.boxShadow = '1px 1px 1px #00000075'
             if (clicou == 0){
             bottom1.style.background = '#edd1fcb6'
+            bottom1.style.borderRadius = '100%'
             } 
         }
 
@@ -69,6 +69,7 @@
                 fazerPedido.style.display = 'block'
                 nomePagina.innerHTML = ('Faça seu pedido')
                 fundo.style.filter = ('blur(30px)')
+                bottom1.style.borderRadius = '31px'
             } else {
                 sairPagina()
             }
