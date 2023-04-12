@@ -76,9 +76,10 @@ body{
 
 #fundo{
     opacity: 0.3;
-    margin-top: 5%;
     position: fixed;
-    scale: 600%;
+    width: 2500px;
+    height: 2000px;
+    transform: translate(-300px,-500px);
 }
 
 .fazerPedido{
