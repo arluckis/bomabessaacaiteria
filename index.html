@@ -42,32 +42,25 @@
         bottom1.addEventListener('mouseout', sair)
         bottom1.addEventListener('click', clicar)
         bottomSair.addEventListener('click', sairPagina)
+        
         var clicou = 0;
         function entrar(){
-            if (clicou == 0){
-                bottom1.style.height = '40px'
-                bottom1.style.borderRadius = '20px'
-                bottom1.style.boxShadow = '2px 2px 2px #00000075'
-                bottom1.style.background = '#ebcafdb6'
-            } 
+            bottom1.style.height = '60%'
+            bottom1.style.borderRadius = '20px'
+            bottom1.style.boxShadow = '2px 2px 2px #00000075'
+            bottom1.style.background = '#db9bfd'
             
         }
         function sair(){
+            
+            bottom1.style.height = '50%'
+            bottom1.style.width = '19%'
+            bottom1.style.borderRadius = '40px'
+            bottom1.style.bottom = '20%'
+            bottom1.style.boxShadow = '1px 1px 1px #00000075'
             if (clicou == 0){
-            bottom1.style.height = '30px'
-            bottom1.style.width = '150px'
-            bottom1.style.borderRadius = '50px'
-            bottom1.style.boxShadow = '1px 1px 1px #00000075'
-            bottom1.style.background = '#dea5fdb6'
-            bottom1.style.bottom = '55px'
-            } else {
-            bottom1.style.height = '30px'
-            bottom1.style.width = '150px'
-            bottom1.style.borderRadius = '50px'
-            bottom1.style.boxShadow = '1px 1px 1px #00000075'
-            bottom1.style.background = '#db9bfd'
-            bottom1.style.bottom = '55px'
-            }
+            bottom1.style.background = '#edd1fcb6'
+            } 
         }
 
         function clicar(){
