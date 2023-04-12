@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom a Bessa Açaíteria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="tela1">
+        <img src="video.gif" id="fundo">
+        <div class="fazerPedido">
+            <div class="barraTopo">
+                <div class="nomePagina"></div>
+                <div class="bottomSair"><strong>X</strong></div>
+    
+            </div>
+    </div>
+    <div class="tela2">
+    </div>
+    
+
+    <div class="menu">
+        <div class="bottomMenu" id="bottom1" > <div class="textOpcao"><strong>Faça seu pedido</strong></div></div>
+        <div class="bottomMenu" id="bottom2"> <div class="textOpcao"><strong>Taxas de Entrega</strong></div></div>
+        <div><img src="logo.jpg" class="logo"></div>
+        <div class="bottomMenu" id="bottom3"> <div class="textOpcao"><strong>Contatos</strong></div></div>
+        <div class="bottomMenu" id="bottom4"> <div class="textOpcao"><strong>Sobre nós</strong></div></div>
+    </div>
+
+
+
+    <script>
+        var bottom1 = window.document.getElementById('bottom1')
+        var bottomSair = window.document.querySelector('.bottomSair')
+        var nomePagina = window.document.querySelector('.nomePagina')
+        var fazerPedido = window.document.querySelector('.fazerPedido')
+        var fundo = window.document.querySelector('#fundo')
+        bottom1.addEventListener('mouseenter', entrar)
+        bottom1.addEventListener('mouseout', sair)
+        bottom1.addEventListener('click', clicar)
+        bottomSair.addEventListener('click', sairPagina)
+        var clicou = 0;
+        function entrar(){
+            if (clicou == 0){
+                bottom1.style.height = '40px'
+                bottom1.style.borderRadius = '20px'
+                bottom1.style.boxShadow = '2px 2px 2px #00000075'
+                bottom1.style.background = '#ebcafdb6'
+            } 
+            
+        }
+        function sair(){
+            if (clicou == 0){
+            bottom1.style.height = '30px'
+            bottom1.style.width = '150px'
+            bottom1.style.borderRadius = '50px'
+            bottom1.style.boxShadow = '1px 1px 1px #00000075'
+            bottom1.style.background = '#dea5fdb6'
+            bottom1.style.bottom = '55px'
+            } else {
+            bottom1.style.height = '30px'
+            bottom1.style.width = '150px'
+            bottom1.style.borderRadius = '50px'
+            bottom1.style.boxShadow = '1px 1px 1px #00000075'
+            bottom1.style.background = '#db9bfd'
+            bottom1.style.bottom = '55px'
+            }
+        }
+
+        function clicar(){
+            if(clicou==0){
+                clicou = 1;
+                fazerPedido.style.display = 'block'
+                nomePagina.innerHTML = ('Faça seu pedido')
+                fundo.style.filter = ('blur(30px)')
+            } else {
+                sairPagina()
+            }
+        }
+
+        function sairPagina(){
+            clicou = 0;
+            fazerPedido.style.display = 'none'
+            fundo.style.filter = ('blur(0px)')
+            sair()
+        }
+
+    </script>
+</body>
+</html>
