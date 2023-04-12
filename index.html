@@ -46,25 +46,39 @@
         
         var clicou = 0;
         function entrar(){
-            bottom1.style.height = '75%'
-            bottom1.style.minHeight = '34px'
+            bottom1.style.height = '55%'
+            bottom1.style.minHeight = '50px'
             bottom1.style.boxShadow = '2px 2px 2px #00000075'
             bottom1.style.background = '#db9bfd'
             
         }
         function sair(){
             
-            bottom1.style.height = '70%'
             bottom1.style.width = '20%'
-            bottom1.style.minWidth = '30px'
-            bottom1.style.minHeight = '30px'
+            bottom1.style.minWidth = '60px'
+            bottom1.style.minHeight = '45px'
             bottom1.style.bottom = '10%'
             bottom1.style.boxShadow = '1px 1px 1px #00000075'
             if (clicou == 0){
             bottom1.style.background = '#edd1fcb6'
             bottom1.style.borderRadius = '100px'
+            bottom1.style.height = '40%'
             } 
         }
+
+        /*width: 20%;
+    height: 40%;
+    min-width: 60px;
+    min-height: 45px;
+    padding: 0.8%;
+    background-color: #edd1fcb6;
+    bottom: 10%;
+    position: absolute;
+    border-radius: 100px;
+    cursor: pointer;
+    left: auto;
+    right: auto;
+    box-shadow: 1px 1px 1px #00000075;*/
         function clicar(){
             if(clicou==0){
                 clicou = 1;
