@@ -80,9 +80,10 @@ body{
 }
 
 #fundo{
-    opacity: 0.4;
-    position: fixed;
-    scale: 900%;
+    opacity: 0.2;
+    position: absolute;
+    scale: 500%;
+    margin: auto;
 }
 
 .fazerPedido{
